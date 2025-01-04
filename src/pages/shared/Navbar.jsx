@@ -1,48 +1,72 @@
+import { HiOutlineMenuAlt2 } from "react-icons/hi";
 
 const Navbar = () => {
-    const menItems = <>
-        <li><a>Item 1</a></li>
-        <li><a>Item 1</a></li>
-        <li><a>Item 1</a></li>
-    </>
+    const menItems = (
+        <>
+            <li>
+                <a className="relative group transition duration-300 hover:bg-transparent">
+                    Home
+                    <span className="absolute left-0 bottom-0 lg:top-[49px] h-[3px] w-full origin-left scale-x-0 bg-primaryColor transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
+                </a>
+            </li>
+            <li>
+                <a className="relative group transition duration-300 hover:bg-transparent">
+                    About
+                    <span className="absolute left-0 bottom-0 lg:top-[49px] h-[3px] w-full origin-left scale-x-0 bg-primaryColor transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
+                </a>
+            </li>
+            <li>
+                <a className="relative group transition duration-300 hover:bg-transparent">
+                    Skills
+                    <span className="absolute left-0 bottom-0 lg:top-[49px] h-[3px] w-full origin-left scale-x-0 bg-primaryColor transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
+                </a>
+            </li>
+            <li>
+                <a className="relative group transition duration-300 hover:bg-transparent">
+                    Projects
+                    <span className="absolute left-0 bottom-0 lg:top-[49px] h-[3px] w-full origin-left scale-x-0 bg-primaryColor transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
+                </a>
+            </li>
+            <li>
+                <a className="relative group transition duration-300 hover:bg-transparent">
+                    Contact
+                    <span className="absolute left-0 bottom-0 lg:top-[49px] h-[3px] w-full origin-left scale-x-0 bg-primaryColor transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
+                </a>
+            </li>
+        </>
+    );
+
     return (
         <div className="navbar bg-white p-0">
             <div className="navbar-start">
+                <a className="text-xl md:text-3xl text-white font-semibold logo-Bg-shape py-5 md:py-4 px-8 md:px-16 bg-primaryColor">
+                    Sharif <span className="text-secondaryColor">.S</span>
+                </a>
+            </div>
+            
+            <div className="navbar-center hidden lg:flex">
+                <ul className="menu menu-horizontal px-1 space-x-4 text-[16px] font-semibold">{menItems}</ul>
+            </div>
+
+            <div className="navbar-end">
+                <a className="btn rounded-none bg-primaryColor text-white">Download Resume</a>
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+                        <HiOutlineMenuAlt2 size={25} color="#02245b"/>
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        className="menu menu-sm dropdown-content bg-base-100 z-10 border-t-2 border-primaryColor mt-[10px] mr-5 w-52 p-2 shadow right-0"
+                    >
                         {menItems}
                     </ul>
                 </div>
 
-                <a className="text-xl text-white font-semibold logo-Bg-shape py-5 pl-3 pr-8 bg-[#f97316]">Sharif.S</a>
-            </div>
-            <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
-                    {menItems}
-                </ul>
-            </div>
-            <div className="navbar-end">
-                <a className="btn rounded-none bg-[#f97316] text-white">Download Resume</a>
             </div>
         </div>
-
     );
+
+
 };
 
 export default Navbar;

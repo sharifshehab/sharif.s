@@ -4,7 +4,7 @@ const Hero = () => {
     return (
         <div className="bg-gradient-to-r from-[#02245b] py-20 md:pb-0">
 
-            <div className="flex items-center flex-col md:flex-row justify-between gap-8 container m-auto px-3">
+            <div className="flex items-center flex-col md:flex-row justify-between gap-8 container mx-auto px-5">
 
                 <div className="content text-white text-center md:text-left space-y-5">
                     <h1 className="text-4xl md:text-7xl">MERN Stack Developer</h1>
