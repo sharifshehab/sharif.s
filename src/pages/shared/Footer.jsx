@@ -14,8 +14,9 @@ const Footer = () => {
                 <img src="https://i.ibb.co/ZHYQ04D/footer-logo.png" alt="logo"
                     className="w-[130px]" />
 
-                <p className="text-white">© 2024 Sharif.S. All Rights
-                    Reserved. </p>
+                <p className="text-white">
+                    © {new Date().getFullYear()} <span className="text-primaryColor">Sharif.S</span>. All Rights Reserved.
+                </p>
 
                 <div className="flex items-center gap-3 text-white">
                     <a href="https://github.com/sharifshehab" target="_blank">

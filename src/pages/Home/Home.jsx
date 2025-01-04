@@ -6,13 +6,13 @@ import Skills from "./Skills/Skills";
 
 const Home = () => {
   return (
-    <main>
+    <>
       <Hero></Hero>
       <About></About>
       <Skills></Skills>
       <Projects></Projects>
       <Contact></Contact>
-    </main>
+    </>
   );
 };
 

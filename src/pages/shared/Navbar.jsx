@@ -3,6 +3,7 @@ import { HiOutlineMenuAlt2 } from "react-icons/hi";
 const Navbar = () => {
     const menItems = (
         <>
+            
             <li>
                 <a className="relative group transition duration-300 hover:bg-transparent">
                     Home
@@ -38,9 +39,9 @@ const Navbar = () => {
 
     return (
         <header>
-            <nav className="navbar p-0">
+            <nav className="navbar p-0 border-b">
                 <div className="navbar-start">
-                    <a className="text-xl md:text-3xl text-white font-semibold logo-Bg-shape py-5 md:py-4 px-8 md:px-16 bg-primaryColor">
+                    <a className="text-xl md:text-3xl text-white font-semibold logo-Bg-shape py-5 md:py-4 px-8 md:px-16 -mb-[1px] bg-primaryColor">
                         Sharif <span className="text-secondaryColor">.S</span>
                     </a>
                 </div>
@@ -50,7 +51,9 @@ const Navbar = () => {
                 </div>
 
                 <div className="navbar-end">
-                    <a className="btn rounded-none bg-primaryColor text-white">Download Resume</a>
+                    <div className="pr-3 lg:pr-16">
+                        <a className="btn rounded-none bg-primaryColor text-white">Download Resume</a>
+                    </div>
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                             <HiOutlineMenuAlt2 size={25} color="#02245b" />

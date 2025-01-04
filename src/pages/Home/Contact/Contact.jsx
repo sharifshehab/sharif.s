@@ -16,7 +16,7 @@ const Contact = () => {
                     <div className="flex flex-col gap-1 w-full">
                         <label className="relative">
                             <input type="email"
-                                className="peer border-primaryColor border outline-none px-4 py-3 w-full focus:border-secondaryColor transition-colors duration-300"
+                                className="peer border-secondaryColor border outline-none px-4 py-3 w-full focus:border-primaryColor transition-colors duration-300"
                             />
                             <span
                                 className="absolute top-3 left-5 peer-focus:-top-3 peer-focus:bg-white peer-focus:left-2 peer-focus:scale-[0.9] peer-focus:text-primaryColor text-gray-400 peer-focus:px-1 transition-all duration-300 ">
@@ -27,7 +27,7 @@ const Contact = () => {
                     <div className="flex flex-col gap-1 w-full mt-[20px]">
                         <label className="relative w-full">
                             <textarea
-                                className="peer min-h-[200px] border-primaryColor border outline-none px-4 py-3 w-full focus:border-secondaryColor transition-colors duration-300"
+                                className="peer min-h-[200px] border-secondaryColor border outline-none px-4 py-3 w-full focus:border-primaryColor transition-colors duration-300"
                             ></textarea>
                             <span
                                 className="absolute top-3 left-5 peer-focus:-top-3 peer-focus:bg-white peer-focus:left-2 peer-focus:scale-[0.9] peer-focus:text-primaryColor text-gray-400 peer-focus:px-1 transition-all duration-300 ">
@@ -35,33 +35,33 @@ const Contact = () => {
                             </span>
                         </label>
                     </div>
-                    <button type="submit" className={`py-3 px-4 text-white text-lg font-semibold bg-secondaryColor border  outline-none mt-3 w-full hover:drop-shadow-lg hover:bg-primaryColor duration-500`}>Submit</button>
+                    <button type="submit" className={`py-3 px-4 text-white text-lg font-semibold bg-primaryColor border  outline-none mt-3 w-full hover:drop-shadow-lg hover:bg-secondaryColor duration-500`}>Submit</button>
                 </form>
 
                 {/*  informations  */}
-                <aside className="w-full bg-secondaryColor flex flex-col justify-between p-6">
+                <aside className="w-full bg-primaryColor flex flex-col justify-between p-6">
 
                     <div>
-                        <h1 className="text-4xl font-semibold leading-relaxed text-primaryColor">Contact
+                        <h1 className="text-4xl font-semibold font-monts leading-relaxed text-secondaryColor">Contact
                             Information</h1>
                         <p className="mt-1 mb-8 text-white leading-relaxed">Let's start a conversation! Reach out for any questions or to discuss how we can collaborate. I'm here to help and eager to connect. Feel free to chat anytime!</p>
                     </div>
 
-                    <div className="flex flex-col gap-[20px] text-gray-300">
-                        <p className="flex items-center gap-[8px]">
-                            <IoLocationOutline size={18} color="#ff5e14"/>
+                    <div className="flex flex-col gap-4 text-secondaryColor font-semibold">
+                        <p className="flex items-center gap-2">
+                            <IoLocationOutline size={18} color="#fff"/>
                             East Alipur, Faridpur, Bangladesh
                         </p>
-                        <p className="flex items-center gap-[8px]">
-                            <MdOutlineEmail size={18} color="#ff5e14" />
+                        <p className="flex items-center gap-2">
+                            <MdOutlineEmail size={18} color="#fff" />
                             sharifshehabuzzaman@gmail.com
                         </p>
-                        <p className="flex items-center gap-[8px]">
-                            <MdOutlineCall size={18} color="#ff5e14"/>
+                        <p className="flex items-center gap-2">
+                            <MdOutlineCall size={18} color="#fff"/>
                             +8801709370961
                         </p>
-                        <p className="flex items-center break-all gap-[8px]">
-                            <FaWhatsapp size={18} color="#ff5e14"/>
+                        <p className="flex items-center break-all gap-2">
+                            <FaWhatsapp size={18} color="#fff"/>
                             +8801709370961
                         </p>
                     </div>
