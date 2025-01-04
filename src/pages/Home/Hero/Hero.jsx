@@ -8,7 +8,7 @@ const Hero = () => {
 
                 <div className="content text-white text-center md:text-left space-y-5">
                     <h1 className="text-4xl md:text-7xl">MERN Stack Developer</h1>
-                    <p>I design beautiful landing pages s</p>
+                    <p>I design beautiful landing pages</p>
                     <div>
                         <a href="#">git</a>
                     </div>

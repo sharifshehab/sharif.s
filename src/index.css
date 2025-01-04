@@ -2,6 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+/*-------------------- 
+  custom properties 
+--------------------*/
+:root {
+  --primary-color: #ff5e14;
+  --secondary-color: #02245b;
+}
+
+/*-------------------- 
+  preset properties 
+--------------------*/
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  /* color: var(--dark-color); */
+  background: none repeat scroll 0 0;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main>section {
+  margin: 130px 0;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+
+
+h2 {
+  font-weight: 700;
+}
+
+
+
 .logo-Bg-shape{
     clip-path: polygon(0 0, 100% 0%, 65% 100%, 0 100%);
 }
+
+.text-background {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-align: center; /* Ensures text alignment if needed */
+    height: 200px; /* Set a height for demonstration */
+}
+
+.text-background::before {
+    content: "Background Text";
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position from center point */
+    z-index: -1; /* Ensure it's behind the content */
+    font-size: 5rem; /* Adjust size */
+    color: rgba(0, 0, 0, 0.1); /* Transparent background text */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+
