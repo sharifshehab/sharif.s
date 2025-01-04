@@ -1,11 +1,11 @@
 
 const SectionHeading = ({ bgHeading ="About", Heading ="Know a little bit about me"}) => {
     return (
-        <div className="relative flex items-center justify-center py-20">
-            <div className="relative z-10 text-white text-3xl md:text-5xl">
-                <h2 className="text-secondaryColor">{Heading}</h2>
+        <div className="relative flex items-center justify-center font-monts py-20">
+            <div className="relative z-10">
+                <h2 className="text-secondaryColor text-3xl md:text-5xl border-x-2 border-primaryColor px-5">{Heading}</h2>
             </div>
-            <div className="absolute bottom-14 inset-0 flex items-center justify-center text-gray-500 text-[120px] font-bold opacity-10">
+            <div className="absolute bottom-14 inset-0 flex items-center justify-center text-primaryColor text-7xl md:text-9xl font-bold opacity-15">
                 {bgHeading}
             </div>
         </div>

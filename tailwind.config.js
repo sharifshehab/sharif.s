@@ -1,3 +1,4 @@
+const textFillStroke = require('tailwindcss-text-fill-stroke');
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -9,6 +10,10 @@ export default {
       colors: {
         primaryColor: 'var(--primary-color)',
         secondaryColor: 'var(--secondary-color)',
+      },
+      fontFamily: {
+        monts: ['Montserrat', 'serif'],
+        nunito: ['Nunito Sans', 'serif'],
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 25s linear infinite',
@@ -23,5 +28,6 @@ export default {
   },
   plugins: [
     require('daisyui'),
+    textFillStroke(),
   ],
 }
