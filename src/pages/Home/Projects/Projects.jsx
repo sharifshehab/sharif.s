@@ -7,9 +7,9 @@ const Projects = () => {
             <SectionHeading bgHeading="Projects" Heading="Projects I have worked on"></SectionHeading>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
 
-            <SingleProject></SingleProject>
-            <SingleProject></SingleProject>
-            <SingleProject></SingleProject>
+                <SingleProject projectName={"Lush Care"}></SingleProject>
+                <SingleProject projectName={"Cine Spher"}></SingleProject>
+                <SingleProject projectName={"Pogarden"}></SingleProject>
 
             </div>
         </section>

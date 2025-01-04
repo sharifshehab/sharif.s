@@ -39,7 +39,7 @@ const Navbar = () => {
 
     return (
         <header>
-            <nav className="navbar p-0 border-b">
+            <nav className="navbar bg-white p-0 border-b">
                 <div className="navbar-start">
                     <a className="text-xl md:text-3xl text-white font-semibold logo-Bg-shape py-5 md:py-4 px-8 md:px-16 -mb-[1px] bg-primaryColor">
                         Sharif <span className="text-secondaryColor">.S</span>

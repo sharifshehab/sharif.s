@@ -1,9 +1,7 @@
-import { FaRegHeart } from "react-icons/fa";
-import { MdOutlineTimer } from "react-icons/md";
 import { FaReact } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const SingleProject = () => {
+const SingleProject = ({projectName, tech="React", link}) => {
     return (
         <div
             className="shadow-md h-[350px] hover:scale-[1.05] transition-all duration-300 overflow-hidden relative cursor-pointer group">
@@ -14,7 +12,7 @@ const SingleProject = () => {
     
                 <div className="flex items-center justify-center gap-2">
                     <FaReact className="text-secondaryColor" size={21} />
-                    <p className="font-monts font-semibold text-secondaryColor">React</p>
+                    <p className="font-monts font-semibold text-secondaryColor">{tech}</p>
                 </div>
             </div>
 
@@ -26,7 +24,7 @@ const SingleProject = () => {
 
             {/*  texts  */}
             <div className="absolute bottom-0 left-0 py-[20px] pb-[40px] px-[20px] w-full">
-                <h3 className="text-[1.4rem] font-bold text-gray-900">Discover the sea</h3>
+                <h3 className="text-[1.4rem] font-bold text-gray-900">{projectName}</h3>
                 <Link to={'/project-details'}><a className="btn rounded-none bg-primaryColor text-white">View Details</a></Link>
             </div>
         </div>
