@@ -3,8 +3,6 @@ import SectionHeading from "../../../components/SectionHeading";
 import { MdOutlineCall, MdOutlineEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa6";
-import { CgFacebook } from "react-icons/cg";
-import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 
 const Contact = () => {
     return (
