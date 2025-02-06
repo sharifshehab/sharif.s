@@ -14,7 +14,10 @@ export const router = createBrowserRouter([
                 element: <Home></Home>
             },
             {
-                path: "project-details",
+                path: "projects/:id",
+                loader: async ({ params }) => {
+                    return fetch(`https://sharif-shehab-server.vercel.app/projects/${params.id}`);
+                },
                 element: <ProjectDetails></ProjectDetails>
             }
         ]

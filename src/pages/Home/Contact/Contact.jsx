@@ -1,22 +1,44 @@
 import SectionHeading from "../../../components/SectionHeading";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 // react icons
 import { MdOutlineCall, MdOutlineEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa6";
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('service_z2rovd3', 'template_an7ggib', form.current, {
+                publicKey: 'blblvPu2wyHVCqciu',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+    };
+
     return (
-        <section className="container mx-auto px-5">
+        <section className="container mx-auto px-5" id="contact">
             <SectionHeading bgHeading="Contact" Heading="Let's have a few words"></SectionHeading>
 
             <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-9">
 
                 {/* form area */}
-                <form className="w-full ">
+                <form className="w-full" ref={form} onSubmit={sendEmail}>
                     <div className="flex flex-col gap-1 w-full">
                         <label className="relative">
                             <input type="email"
-                                className="peer border-secondaryColor border outline-none px-4 py-3 w-full focus:border-primaryColor transition-colors duration-300"
+                                name="from_email"
+                                className="peer border-secondaryColor border outline-none pl-36 pr-4 py-3 w-full focus:border-primaryColor transition-colors duration-300"
                             />
                             <span
                                 className="absolute top-3 left-5 peer-focus:-top-3 peer-focus:bg-white peer-focus:left-2 peer-focus:scale-[0.9] peer-focus:text-primaryColor text-gray-400 peer-focus:px-1 transition-all duration-300 ">
@@ -27,7 +49,8 @@ const Contact = () => {
                     <div className="flex flex-col gap-1 w-full mt-[20px]">
                         <label className="relative w-full">
                             <textarea
-                                className="peer min-h-[200px] border-secondaryColor border outline-none px-4 py-3 w-full focus:border-primaryColor transition-colors duration-300"
+                                name="message"
+                                className="peer min-h-[200px] border-secondaryColor border outline-none pl-36 pr-4 py-3 w-full focus:border-primaryColor transition-colors duration-300"
                             ></textarea>
                             <span
                                 className="absolute top-3 left-5 peer-focus:-top-3 peer-focus:bg-white peer-focus:left-2 peer-focus:scale-[0.9] peer-focus:text-primaryColor text-gray-400 peer-focus:px-1 transition-all duration-300 ">

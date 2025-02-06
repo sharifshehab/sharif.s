@@ -1,4 +1,4 @@
-import hero_img from "../../../assets/bannerImg.png";
+import hero_img1_1 from "../../../assets/test1.0.png";
 import { RiGithubLine } from "react-icons/ri";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { BiLogoBehance } from "react-icons/bi";
@@ -28,11 +28,14 @@ const Hero = () => {
                             <BiLogoBehance size={28} className="border border-primaryColor text-secondaryColor bg-white p-1 rounded-full hover:animate-pulse hover:text-primaryColor hover:border-white duration-500" />
                         </a>
                     </div>
-                    <a className="btn rounded-none bg-[#f97316] text-white">Download Resume</a>
+
+                    <a href="/sharif-shehabuzzaman.pdf" download="Sharif_Shehab_Resume.pdf" className="btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500">
+                        Download Resume
+                    </a>
                 </div>
 
                 <div className="hero-img order-first md:order-last">
-                    <img src={hero_img} alt="" />
+                    <img src={hero_img1_1} alt="" className="w-[600px]"/>
                 </div>
             </div>
 

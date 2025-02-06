@@ -1,36 +1,35 @@
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const menItems = (
         <>
-            
             <li>
-                <a className="relative group transition duration-300 hover:bg-transparent">
-                    Home
+                <NavLink className={({ isActive }) => isActive ? 'relative group transition focus:bg-transparent duration-300 ' : 'hover:bg-transparent'} to='/' end>Home
                     <span className="absolute left-0 bottom-0 lg:top-[49px] h-[3px] w-full origin-left scale-x-0 bg-primaryColor transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
-                </a>
+                </NavLink>  
             </li>
             <li>
-                <a className="relative group transition duration-300 hover:bg-transparent">
+                <a href="#about" className="relative group transition duration-300 hover:bg-transparent">
                     About
                     <span className="absolute left-0 bottom-0 lg:top-[49px] h-[3px] w-full origin-left scale-x-0 bg-primaryColor transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
                 </a>
             </li>
             <li>
-                <a className="relative group transition duration-300 hover:bg-transparent">
+                <a href="#skill" className="relative group transition duration-300 hover:bg-transparent">
                     Skills
                     <span className="absolute left-0 bottom-0 lg:top-[49px] h-[3px] w-full origin-left scale-x-0 bg-primaryColor transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
                 </a>
             </li>
             <li>
-                <a className="relative group transition duration-300 hover:bg-transparent">
+                <a href="#projects" className="relative group transition duration-300 hover:bg-transparent">
                     Projects
                     <span className="absolute left-0 bottom-0 lg:top-[49px] h-[3px] w-full origin-left scale-x-0 bg-primaryColor transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
                 </a>
             </li>
             <li>
-                <a className="relative group transition duration-300 hover:bg-transparent">
-                    Contact
+                <a href="#contact" className="relative group transition duration-300 hover:bg-transparent">
+                    Contacts
                     <span className="absolute left-0 bottom-0 lg:top-[49px] h-[3px] w-full origin-left scale-x-0 bg-primaryColor transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
                 </a>
             </li>
@@ -52,7 +51,11 @@ const Navbar = () => {
 
                 <div className="navbar-end">
                     <div className="pr-3 lg:pr-16">
-                        <a className="btn rounded-none bg-primaryColor text-white">Download Resume</a>
+
+                        <a href="/sharif-shehabuzzaman.pdf" download="Sharif_Shehab_Resume.pdf" className="btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500">
+                            Download Resume
+                        </a>
+
                     </div>
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

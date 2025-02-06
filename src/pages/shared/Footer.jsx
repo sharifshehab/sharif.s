@@ -1,18 +1,20 @@
 // react icons
-import { CgFacebook } from "react-icons/cg";
-import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { RiGithubLine } from "react-icons/ri";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { BiLogoBehance } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className="bg-secondaryColor boxShadow border-t border-primaryColor w-full">
+        <footer className="bg-secondaryColor border-t border-primaryColor w-full">
             <div
-                className="container mx-auto px-5 pt-3 flex items-center justify-center md:justify-between w-full flex-wrap gap-5">
+                className="container mx-auto px-5 py-3 flex items-center justify-center md:justify-between w-full flex-wrap gap-5">
 
-                <img src="https://i.ibb.co/ZHYQ04D/footer-logo.png" alt="logo"
-                    className="w-[130px]" />
+                <Link to={"/"} className="text-3xl text-primaryColor font-semibold"> 
+                    
+                        Sharif <span className="text-white">.S</span>
+                
+                </Link>
 
                 <p className="text-white">
                     © {new Date().getFullYear()} <span className="text-primaryColor">Sharif.S</span>. All Rights Reserved.
@@ -29,6 +31,7 @@ const Footer = () => {
                         <BiLogoBehance size={25} className="text-white hover:animate-pulse hover:text-primaryColor duration-500"/>
                     </a>
                 </div>
+                
             </div>
         </footer>
     );

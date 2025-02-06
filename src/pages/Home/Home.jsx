@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import About from "./About/About";
 import Contact from "./Contact/Contact";
 import Hero from "./Hero/Hero";
@@ -7,6 +8,7 @@ import Skills from "./Skills/Skills";
 const Home = () => {
   return (
     <>
+      <Helmet> <title>Sharif Shehab - Home</title> </Helmet>
       <Hero></Hero>
       <About></About>
       <Skills></Skills>

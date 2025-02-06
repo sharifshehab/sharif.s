@@ -8,21 +8,20 @@ import { IoLogoJavascript } from "react-icons/io";
 
 const Skills = () => {
     return (
-        <section>
+        <section id="skill">
             <SectionHeading bgHeading="Skill" Heading="Skills I have honed"></SectionHeading>
 
             <Marquee autoFill={true}>
-                <FaHtml5 size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-20" />
-                <FaCss3 size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-20" />
-                <IoLogoJavascript size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-20" />
-                <FaReact size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-20" />
-                <SiReactrouter size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-20" />
-                <RiFirebaseLine size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-20" />
-                <FaNode size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-20" />
-                <SiExpress size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-20" />
-                <SiMongodb size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-20" />
+                <FaHtml5 size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-28" />
+                <FaCss3 size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-28" />
+                <IoLogoJavascript size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-28" />
+                <FaReact size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-28" />
+                <SiReactrouter size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-28" />
+                <RiFirebaseLine size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-28" />
+                <FaNode size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-28" />
+                <SiExpress size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-28" />
+                <SiMongodb size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-28" />
             </Marquee>
-
 
         </section>
     );
