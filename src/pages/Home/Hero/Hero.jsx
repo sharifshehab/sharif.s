@@ -1,4 +1,4 @@
-import hero_img1_1 from "../../../assets/test1.0.png";
+import hero_img1_1 from "../../../assets/profile-image.webp";
 import { RiGithubLine } from "react-icons/ri";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { BiLogoBehance } from "react-icons/bi";
@@ -29,7 +29,7 @@ const Hero = () => {
                         </a>
                     </div>
 
-                    <a href="/sharif-shehabuzzaman.pdf" download="Sharif_Shehab_Resume.pdf" className="btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500">
+                    <a href="/Resume-of-MERN-Stack-Developer-Sharif-Shehabuzzaman.pdf" download="Sharif_Shehab_Resume.pdf" className="btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500">
                         Download Resume
                     </a>
                 </div>

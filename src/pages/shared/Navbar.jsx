@@ -29,7 +29,7 @@ const Navbar = () => {
             </li>
             <li>
                 <a href="#contact" className="relative group transition duration-300 hover:bg-transparent">
-                    Contacts
+                    Contact
                     <span className="absolute left-0 bottom-0 lg:top-[49px] h-[3px] w-full origin-left scale-x-0 bg-primaryColor transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
                 </a>
             </li>
@@ -52,7 +52,7 @@ const Navbar = () => {
                 <div className="navbar-end">
                     <div className="pr-3 lg:pr-16">
 
-                        <a href="/sharif-shehabuzzaman.pdf" download="Sharif_Shehab_Resume.pdf" className="btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500">
+                        <a href="/Resume-of-MERN-Stack-Developer-Sharif-Shehabuzzaman.pdf" download="Sharif_Shehab_Resume.pdf" className="btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500">
                             Download Resume
                         </a>
 
