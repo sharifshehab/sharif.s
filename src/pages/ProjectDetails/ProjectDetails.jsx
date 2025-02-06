@@ -73,7 +73,7 @@ const ProjectDetails = () => {
                         <div className="flex flex-col lg:flex-row gap-4">
                             <a href={githubLink} target="_blank" className="inline-block w-full">
                                 <button
-                                    className="py-3 px-4 w-full border bg-secondaryColor text-white hover:drop-shadow-lg duration-500">
+                                    className="py-3 px-4 w-full border bg-secondaryColor text-white hover:drop-shadow-lg hover:opacity-85 duration-500">
                                     <div className="flex items-center justify-center gap-2">
                                         <DiGithubAlt size={25} className="text-primaryColor" />
                                         Github Repo
@@ -83,7 +83,7 @@ const ProjectDetails = () => {
 
                             <a href={liveLink} target="_blank" className="inline-block w-full">
                                 <button
-                                    className="py-3 px-4 w-full border bg-primaryColor text-white hover:drop-shadow-lg duration-500">
+                                    className="py-3 px-4 w-full border bg-primaryColor text-white hover:drop-shadow-lg hover:opacity-85 duration-500">
                                     <div className="flex items-center justify-center gap-2">
                                         <HiStatusOnline size={24} className="text-secondaryColor" />
                                         Visit Live Link
