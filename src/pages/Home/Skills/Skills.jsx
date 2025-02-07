@@ -24,7 +24,7 @@ const Skills = () => {
                 <SiReactrouter size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-28" />
             </Marquee>
 
-            <Marquee autoFill={true} direction="right" speed={35}  gradient={true} style={{ marginTop: "40px" }}>
+            <Marquee autoFill={true} direction="right" speed={35} gradient={true} style={{ marginTop: "25px" }}>
                 <RiFirebaseLine size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-28" />
                 <RiNextjsLine size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-28" />
                 <FaNode size={45} className="bg-primaryColor text-white p-2 rounded-sm mx-28" />

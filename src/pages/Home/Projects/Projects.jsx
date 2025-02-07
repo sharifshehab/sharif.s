@@ -19,7 +19,7 @@ const Projects = () => {
         <section className="container mx-auto px-5" id="projects">
             <SectionHeading bgHeading="Projects" Heading="Projects I have worked on"></SectionHeading>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
                 {
                     projects.map(project => <SingleProject key={project.id} project={project}></SingleProject>)
                 }

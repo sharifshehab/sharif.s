@@ -9,15 +9,14 @@ import { Helmet } from "react-helmet-async";
 
 const ProjectDetails = () => {
     const project = useLoaderData();
-    const { name, description, image, technology, features, githubLink, liveLink } = project;
-    console.log(technology);
+    const { name, title, description, image, technology, features, githubLink, liveLink } = project;
 
     return (
         <>
             <Helmet> <title>Sharif Shehab - Project Details</title> </Helmet>
 
             <section className="container mx-auto px-5">
-                <div className="w-full min-h-screen items-center grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div className="w-full min-h-screen items-center grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {/* Left side - Image gallery */}
                     <div className="flex flex-col-reverse gap-4 lg:gap-0 lg:flex-row">
 
@@ -25,13 +24,15 @@ const ProjectDetails = () => {
                         <img
                             src={image}
                             alt=""
+                            className=""
                         />
                     </div>
 
                     {/* Right side - Product details */}
                     <div className="flex flex-col gap-6">
-                        <div>
-                            <h1 className="text-2xl lg:text-5xl font-bold">{name}</h1>
+                        <div className="text-center space-y-2">
+                            <h1 className="text-4xl md:text-5xl font-bold text-primaryColor underline underline-offset-8 decoration-gray-300">{name}</h1>
+                            <h3 className="text-2xl md:text-3xl font-semibold text-secondaryColor">{title}</h3>
                         </div>
 
                         <p className="">

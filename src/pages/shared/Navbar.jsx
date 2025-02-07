@@ -1,5 +1,5 @@
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const menItems = (
@@ -40,9 +40,12 @@ const Navbar = () => {
         <header>
             <nav className="navbar bg-white p-0 border-b">
                 <div className="navbar-start">
-                    <a className="text-xl md:text-3xl text-white font-semibold logo-Bg-shape py-5 md:py-4 px-8 md:px-16 -mb-[1px] bg-primaryColor">
-                        Sharif <span className="text-secondaryColor">.S</span>
-                    </a>
+                    <Link  to='/'>
+                        <span className="text-xl md:text-3xl text-white font-semibold logo-Bg-shape py-5 md:py-4 px-8 md:px-16 -mb-[1px] bg-primaryColor">
+                            Sharif <span className="text-secondaryColor">.S</span>
+                        </span>
+                    </Link>  
+                    
                 </div>
 
                 <div className="navbar-center hidden lg:flex">
