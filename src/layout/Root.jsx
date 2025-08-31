@@ -8,7 +8,6 @@ const Root = () => {
 
     return (
         <>
-
             <Sticky innerZ={15}>
                 <Navbar></Navbar>
             </Sticky>

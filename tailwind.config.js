@@ -12,6 +12,7 @@ export default {
         secondaryColor: 'var(--secondary-color)',
       },
       fontFamily: {
+        jost: ['Jost', 'sans-serif'],
         monts: ['Montserrat', 'serif'],
         nunito: ['Nunito Sans', 'serif'],
       },

@@ -8,10 +8,19 @@ const Hero = () => {
         <section className="bg-gradient-to-r from-secondaryColor py-20 md:pb-0 mt-0">
             <div className="flex items-center flex-col md:flex-row justify-between gap-10 md:gap-0 container mx-auto px-5">
                 <div className="content text-white text-center md:text-left space-y-5">
-                    
-                    <h1 className="text-5xl lg:text-7xl font-extrabold leading-snug text-stroke text-stroke-white text-stroke-[5px] text-primaryColor underline underline-offset-8 decoration-white decoration-4">
-                        MERN Stack Developer
-                    </h1>
+                    <>
+                        <div className="">
+                            <span>Hi, My Name is</span>
+                            <h2 className="text-5xl">Sharif Shehabuzzaman</h2>
+                        </div>
+                        <br />
+                        <>
+                            <span>I'm A</span>
+                            <h1 className="font-jost text-5xl lg:text-7xl font-extrabold leading-snug text-stroke text-stroke-white text-stroke-[5px] text-primaryColor underline underline-offset-8 decoration-white decoration-4">
+                                Full Stack Developer
+                            </h1>
+                        </>
+                    </>
 
                     <p className="text-lg">Crafting sleek designs with exceptional performance.
                         <br />
@@ -35,7 +44,7 @@ const Hero = () => {
                 </div>
 
                 <div className="hero-img order-first md:order-last">
-                    <img src={hero_img1_1} alt="" className="w-[600px]"/>
+                    <img src={hero_img1_1} alt="" className="w-[600px]" />
                 </div>
             </div>
 
