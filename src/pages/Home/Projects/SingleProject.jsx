@@ -1,12 +1,15 @@
 import { GrTechnology } from "react-icons/gr";
 import { Link } from "react-router-dom";
 
+const projects = [
+
+]
+
 const SingleProject = ({ project }) => {
-    const { _id, name, image, stack } = project
+    const { _id, subTitle, name, image, stack } = project
     return (
         <div
             className="shadow-md h-[350px] hover:scale-[1.05] transition-all duration-300 overflow-hidden relative cursor-pointer group">
-
             {/*  icons  */}
             <div
                 className="absolute top-0 left-0 opacity-100 z-[-1] group-hover:opacity-100 group-hover:z-[1] ease-out transition-all duration-300 flex items-center justify-end w-full p-4">
@@ -25,8 +28,8 @@ const SingleProject = ({ project }) => {
             {/*  texts  */}
             <div className="absolute bottom-0 left-0 p-5 w-full">
                 <h3 className="text-2xl font-bold">{name}</h3>
-
-                <Link to={`/projects/${_id}`}><a className="mt-2 btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500">View Details</a></Link>
+                <p>{subTitle}</p>
+                <Link to={`/projects/${_id}`}><button className="mt-2 btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500">View Details</button></Link>
             </div>
         </div>
     );

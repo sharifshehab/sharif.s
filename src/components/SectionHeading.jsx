@@ -1,7 +1,7 @@
 
 const SectionHeading = ({ bgHeading ="About", Heading ="Know a little bit about me"}) => {
     return (
-        <div className="relative flex items-center justify-center font-monts py-14">
+        <div className="relative flex items-center justify-center font-jost py-14 capitalize">
             <div className="relative z-10">
                 <h2 className="text-secondaryColor text-3xl md:text-5xl border-x-2 border-primaryColor px-5">{Heading}</h2>
             </div>

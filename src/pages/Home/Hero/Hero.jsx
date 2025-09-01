@@ -2,24 +2,27 @@ import hero_img1_1 from "../../../assets/profile-image.webp";
 import { RiGithubLine } from "react-icons/ri";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { BiLogoBehance } from "react-icons/bi";
+import { Document, Page, pdfjs } from 'react-pdf';
+
 
 const Hero = () => {
+
+
     return (
         <section className="bg-gradient-to-r from-secondaryColor py-20 md:pb-0 mt-0">
             <div className="flex items-center flex-col md:flex-row justify-between gap-10 md:gap-0 container mx-auto px-5">
                 <div className="content text-white text-center md:text-left space-y-5">
                     <>
                         <div className="">
-                            <span>Hi, My Name is</span>
-                            <h2 className="text-5xl">Sharif Shehabuzzaman</h2>
+                            <span className="text-primaryColor">Hi, My Name is</span>
+                            <h2 className="text-5xl font-jost">Sharif Shehabuzzaman</h2>
                         </div>
-                        <br />
-                        <>
+                        <div>
                             <span>I'm A</span>
                             <h1 className="font-jost text-5xl lg:text-7xl font-extrabold leading-snug text-stroke text-stroke-white text-stroke-[5px] text-primaryColor underline underline-offset-8 decoration-white decoration-4">
                                 Full Stack Developer
                             </h1>
-                        </>
+                        </div>
                     </>
 
                     <p className="text-lg">Crafting sleek designs with exceptional performance.
@@ -41,6 +44,17 @@ const Hero = () => {
                     <a href="/Resume-of-MERN-Stack-Developer-Sharif-Shehabuzzaman.pdf" download="Sharif_Shehab_Resume.pdf" className="btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500">
                         Download Resume
                     </a>
+
+                    <div className="w-full flex justify-center  p-4">
+                        <Document
+                            file="/Resume-of-MERN-Stack-Developer-Sharif-Shehabuzzaman.pdf"
+                            onLoadSuccess={({ numPages }) => console.log(`Loaded ${numPages} pages`)}
+                            onLoadError={(err) => console.error('Error loading PDF:', err)}
+                        >
+                            <Page pageNumber={1} width={800} />
+                        </Document>
+                    </div>
+
                 </div>
 
                 <div className="hero-img order-first md:order-last">
