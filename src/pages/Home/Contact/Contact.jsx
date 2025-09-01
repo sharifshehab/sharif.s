@@ -1,5 +1,5 @@
 import SectionHeading from "../../../components/SectionHeading";
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 // react icons
 import { MdOutlineCall, MdOutlineEmail } from "react-icons/md";
@@ -18,7 +18,8 @@ const Contact = () => {
             })
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    console.log('Message Send Successfully!');
+                    form.current.reset()
                 },
                 (error) => {
                     console.log('FAILED...', error.text);

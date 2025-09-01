@@ -31,7 +31,9 @@ const Skills = () => {
 
             <div className="space-y-20">
                 <div className="flex">
-                    <h3>FRONTEND</h3>
+                    <div>
+                        <h3 className="font-semibold text-primaryColor border-b border-primaryColor border-dashed">FRONTEND</h3>
+                    </div>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-5 flex-1">
                         <div className="flex items-center flex-col">
                             <img src={React} alt="" className="w-10" />
@@ -68,7 +70,9 @@ const Skills = () => {
                     </div>
                 </div>{/* FRONTEND */}
                 <div className="flex">
-                    <h3>BACKEND</h3>
+                    <div>
+                        <h3 className="font-semibold text-primaryColor border-b border-primaryColor border-dashed">BACKEND</h3>
+                    </div>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-5 flex-1">
                         <div className="flex items-center flex-col">
                             <img src={NodeJs} alt="" className="w-10" />
@@ -97,7 +101,9 @@ const Skills = () => {
                     </div>
                 </div>{/* BACKEND */}
                 <div className="flex">
-                    <h3>DATABASE</h3>
+                    <div>
+                        <h3 className="font-semibold text-primaryColor border-b border-primaryColor border-dashed">DATABASE</h3>
+                    </div>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-5 flex-1">
                         <div className="flex items-center flex-col">
                             <img src={Mongodb} alt="" className="w-10" />
@@ -118,7 +124,9 @@ const Skills = () => {
                     </div>
                 </div>{/* Database */}
                 <div className="flex">
-                    <h3>TOOLS</h3>
+                    <div>
+                        <h3 className="font-semibold text-primaryColor border-b border-primaryColor border-dashed">TOOLS</h3>
+                    </div>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-5 flex-1">
                         <div className="flex items-center flex-col">
                             <img src={Git} alt="" className="w-10" />
