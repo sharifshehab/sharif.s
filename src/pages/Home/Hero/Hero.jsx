@@ -2,17 +2,17 @@ import hero_img1_1 from "../../../assets/profile-image.webp";
 import { RiGithubLine } from "react-icons/ri";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { BiLogoBehance } from "react-icons/bi";
-import { Document, Page, pdfjs } from 'react-pdf';
-
+import ResumeModal from "../../../components/ResumeModal";
+import { useState } from "react";
 
 const Hero = () => {
-
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
         <section className="bg-gradient-to-r from-secondaryColor py-20 md:pb-0 mt-0">
             <div className="flex items-center flex-col md:flex-row justify-between gap-10 md:gap-0 container mx-auto px-5">
-                <div className="content text-white text-center md:text-left space-y-5">
-                    <>
+                <div className="content text-white text-center md:text-left">
+                    <div className="space-y-5">
                         <div className="">
                             <span className="text-primaryColor">Hi, My Name is</span>
                             <h2 className="text-5xl font-jost">Sharif Shehabuzzaman</h2>
@@ -23,7 +23,7 @@ const Hero = () => {
                                 Full Stack Developer
                             </h1>
                         </div>
-                    </>
+                    
 
                     <p className="text-lg">Crafting sleek designs with exceptional performance.
                         <br />
@@ -40,20 +40,14 @@ const Hero = () => {
                             <BiLogoBehance size={28} className="border border-primaryColor text-secondaryColor bg-white p-1 rounded-full hover:animate-pulse hover:text-primaryColor hover:border-white duration-500" />
                         </a>
                     </div>
-
-                    <a href="/Resume-of-MERN-Stack-Developer-Sharif-Shehabuzzaman.pdf" download="Sharif_Shehab_Resume.pdf" className="btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500">
-                        Download Resume
-                    </a>
-
-                    <div className="w-full flex justify-center  p-4">
-                        <Document
-                            file="/Resume-of-MERN-Stack-Developer-Sharif-Shehabuzzaman.pdf"
-                            onLoadSuccess={({ numPages }) => console.log(`Loaded ${numPages} pages`)}
-                            onLoadError={(err) => console.error('Error loading PDF:', err)}
-                        >
-                            <Page pageNumber={1} width={800} />
-                        </Document>
                     </div>
+
+
+                    <button onClick={() => setIsModalOpen(true)} className="btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500 mt-5">
+                        View Resume
+                    </button>
+
+                    <ResumeModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
                 </div>
 

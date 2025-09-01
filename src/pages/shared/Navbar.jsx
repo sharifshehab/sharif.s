@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { Link, NavLink } from "react-router-dom";
+import ResumeModal from "../../components/ResumeModal";
 
 const Navbar = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const menItems = (
         <>
             <li>
@@ -41,7 +44,7 @@ const Navbar = () => {
             <nav className="navbar bg-white p-0 border-b">
                 <div className="navbar-start">
                     <Link  to='/'>
-                        <span className="text-xl md:text-3xl text-white font-semibold logo-Bg-shape py-5 md:py-4 px-8 md:px-16 -mb-[1px] bg-primaryColor">
+                        <span className="text-xl md:text-3xl text-white font-semibold logo-Bg-shape py-5 md:py-3 px-8 md:px-16 -mb-[1px] bg-primaryColor">
                             Sharif <span className="text-secondaryColor">.S</span>
                         </span>
                     </Link>  
@@ -55,9 +58,11 @@ const Navbar = () => {
                 <div className="navbar-end">
                     <div className="pr-3 lg:pr-16">
 
-                        <a href="/Resume-of-MERN-Stack-Developer-Sharif-Shehabuzzaman.pdf" download="Sharif_Shehab_Resume.pdf" className="btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500">
-                            Download Resume
-                        </a>
+                        <button onClick={() => setIsModalOpen(true)} className="btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500">
+                            View Resume
+                        </button>
+
+                        <ResumeModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
                     </div>
                     <div className="dropdown">
