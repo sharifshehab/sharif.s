@@ -58,7 +58,11 @@ const Navbar = () => {
                 <div className="navbar-end">
                     <div className="pr-3 lg:pr-16">
 
-                        <button onClick={() => setIsModalOpen(true)} className="btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500">
+                        <a href="/Resume-of-MERN-Stack-Developer-Sharif-Shehabuzzaman.pdf" download="Sharif_Shehab_Resume.pdf" className="btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500 lg:hidden inline-flex">
+                            Download Resume
+                        </a>
+
+                        <button onClick={() => setIsModalOpen(true)} className="btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500 hidden lg:block">
                             View Resume
                         </button>
 

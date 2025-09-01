@@ -42,8 +42,11 @@ const Hero = () => {
                     </div>
                     </div>
 
+                    <a href="/Resume-of-MERN-Stack-Developer-Sharif-Shehabuzzaman.pdf" download="Sharif_Shehab_Resume.pdf" className="btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500 mt-5 lg:hidden inline-flex">
+                        Download Resume
+                    </a>
 
-                    <button onClick={() => setIsModalOpen(true)} className="btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500 mt-5">
+                    <button onClick={() => setIsModalOpen(true)} className="btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500 mt-5 hidden lg:block">
                         View Resume
                     </button>
 

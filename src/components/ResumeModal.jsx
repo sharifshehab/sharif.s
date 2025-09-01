@@ -12,7 +12,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
                 className={`w-[90%] dark:bg-white bg-transparent`}
             >
                 {isOpen &&
-                    <div className="w-full flex justify-between bg-white">
+                    <div className="w-full flex justify-between ">
                         <iframe
                             src="/Resume-of-MERN-Stack-Developer-Sharif-Shehabuzzaman.pdf"
                             className="w-full h-[800px] bg-white"
