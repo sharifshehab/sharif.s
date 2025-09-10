@@ -5,17 +5,19 @@ import Hero from "./Hero/Hero";
 import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
 import Blogs from "./Blogs/Blogs";
+import Educations from "./Educations/Educations";
 
 const Home = () => {
   return (
     <>
       <Helmet> <title>Sharif Shehab - Home</title> </Helmet>
-      <Hero></Hero>
-      <About></About>
-      <Skills></Skills>
-      <Projects></Projects>
-      <Blogs />
-      <Contact></Contact>
+      <Hero/>
+      <About/>
+      <Skills/>
+      <Projects/>
+      <Educations/>
+      <Blogs/>
+      <Contact/>
     </>
   );
 };

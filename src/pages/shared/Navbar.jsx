@@ -1,10 +1,8 @@
-import { useState } from "react";
-import { HiOutlineMenuAlt2 } from "react-icons/hi";
+import { MdKeyboardArrowDown } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
-import ResumeModal from "../../components/ResumeModal";
+
 
 const Navbar = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
     const menItems = (
         <>
             <li>
@@ -55,31 +53,38 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1 space-x-4 text-[16px] font-semibold">{menItems}</ul>
                 </div>
 
-                <div className="navbar-end">
-                    <div className="pr-3 lg:pr-16">
-
-                        <a href="/Resume-of-MERN-Stack-Developer-Sharif-Shehabuzzaman.pdf" download="Sharif_Shehab_Resume.pdf" className="btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500 lg:hidden inline-flex">
-                            Download Resume
-                        </a>
-
-                        <button onClick={() => setIsModalOpen(true)} className="btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500 hidden lg:block">
-                            View Resume
-                        </button>
-
-                        <ResumeModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-
-                    </div>
-                    <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                            <HiOutlineMenuAlt2 size={25} color="#02245b" />
+                <div className="navbar-end pe-8 md:pe-16">
+                    <div className="dropdown dropdown-end">
+                        <div tabIndex={0} role="button">
+                            <button className="flex items-center px-5 md:px-7 btn rounded-none bg-secondaryColor text-white hover:bg-primaryColor duration-500">
+                                <h4 className="text-center text-sm md:text-base">My Resume</h4>
+                                <MdKeyboardArrowDown className="text-2xl" />
+                            </button>
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 z-10 border-t-2 border-primaryColor mt-[10px] mr-5 w-52 p-2 shadow right-0"
-                        >
-                            {menItems}
+                            className="menu menu-sm dropdown-content bg-secondaryColor text-base w-44 z-10 p-0 shadow border-x border-b">
+                            <li>
+                                <a
+                                    href="/Resume of Full Stack Developer - sharif shehabuzzaman.pdf"
+                                    download="Sharif_Shehab_Resume.pdf"
+                                    className="flex justify-center items-center rounded-none text-center text-white hover:bg-primaryColor duration-500 font-semibold py-2"
+                                >
+                                    Download Resume
+                                </a>
+                            </li>
+                            <li className="border-t-2 decoration-white">
+                                <a
+                                    href="/Resume of Full Stack Developer - sharif shehabuzzaman.pdf"
+                                    target="_blank"
+                                    className="flex justify-center items-center rounded-none text-white hover:bg-primaryColor duration-500 font-semibold py-2"
+                                >
+                                    View Resume
+                                </a>
+                            </li>
+
                         </ul>
-                    </div>
+                    </div>{/* Resume */}
 
                 </div>
             </nav>
