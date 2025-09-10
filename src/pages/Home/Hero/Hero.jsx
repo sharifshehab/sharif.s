@@ -42,33 +42,32 @@ const Hero = () => {
 
                     <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button">
-                            <button className="flex items-center px-7 btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500 mt-5">
+                            <button className="flex items-center w-40 btn rounded-none bg-primaryColor text-white hover:bg-secondaryColor duration-500 mt-5">
                                 <h4 className="text-center text-base">My Resume</h4>
                                 <MdKeyboardArrowDown className="text-2xl" />
                             </button>
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-secondaryColor text-base w-44 z-10 p-0 shadow border-x border-b">
+                            className="menu menu-sm dropdown-content bg-secondaryColor text-base z-10 w-40 p-0 shadow border-x border-b">
+                            <li className="border-b-2 decoration-white">
+                                <a
+                                    href="/Resume of Full Stack Developer - sharif shehabuzzaman.pdf"
+                                    target="_blank"
+                                    className="flex justify-center items-center rounded-none text-white hover:bg-primaryColor duration-500  py-2"
+                                >
+                                    Preview
+                                </a>
+                            </li>
                             <li>
                                 <a
                                     href="/Resume of Full Stack Developer - sharif shehabuzzaman.pdf"
                                     download="Sharif_Shehab_Resume.pdf"
-                                    className="flex justify-center items-center rounded-none text-center text-white hover:bg-primaryColor duration-500 font-semibold py-2"
+                                    className="flex justify-center items-center rounded-none text-center text-white hover:bg-primaryColor duration-500  py-2"
                                 >
-                                    Download Resume
+                                    Download
                                 </a>
                             </li>
-                            <li className="border-t-2 decoration-white">
-                                <a
-                                    href="/Resume of Full Stack Developer - sharif shehabuzzaman.pdf"
-                                    target="_blank"
-                                    className="flex justify-center items-center rounded-none text-white hover:bg-primaryColor duration-500 font-semibold py-2"
-                                >
-                                    View Resume
-                                </a>
-                            </li>
-
                         </ul>
                     </div>{/* Resume */}
 
